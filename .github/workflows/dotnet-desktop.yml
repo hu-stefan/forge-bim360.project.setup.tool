@@ -36,11 +36,11 @@
 # For a complete CI/CD sample to get started with GitHub Action workflows for Desktop Applications,
 # refer to https://github.com/microsoft/github-actions-for-desktop-apps
 
-name: .NET Core Desktop
+name: BimProjectSetupTool
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master,dev ]
   pull_request:
     branches: [ dev ]
 
