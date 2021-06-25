@@ -42,7 +42,7 @@ on:
   push:
     branches: [ master ]
   pull_request:
-    branches: [ master ]
+    branches: [ dev ]
 
 jobs:
 
@@ -58,8 +58,8 @@ jobs:
     env:
       Solution_Name: BimProjectSetupTool.sln                    # Replace with your solution name, i.e. MyWpfApp.sln.
       Test_Project_Path: Solution_test                          # Replace with the path to your test project, i.e. MyWpfApp.Tests\MyWpfApp.Tests.csproj.
-      Wap_Project_Directory: packages                           # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
-     
+      Wap_Project_Directory: Bim360Install                           # Replace with the Wap project directory relative to the solution, i.e. MyWpfApp.Package.
+      Wap_Project_Path: Bim360Install.wapproj                   # Replace with the path to your Wap project, i.e. MyWpf.App.Package\MyWpfApp.Package.wapproj.
 
     steps:
     - name: Checkout
